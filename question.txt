@@ -1,0 +1,47 @@
+First Module:[8 Marks]
+You are required to write a program to solve following second order differential
+equation.
+
+mx ̈ + cx ̇ + kx = f(t)
+
+1. Your program should be based on generalized alpha method, i.e. you
+should allow user to input the value of α.
+2. Your program should be modular, i.e. try to split your programs in to
+various subroutines as much as possible.
+3. You should write a independent subroutine to compute the value of f(t),
+so that if some one want to change the right hand side of the equation, he
+should only need to edit that particular subroutine.
+4. User should be allowed to input k, c, m, α, ∆t (time step size), t0 (initial time),
+tf final(final time) as well as initial conditions.
+5. A plot of x vs t should be generated with suitable labels.
+
+6. For validation of homogeneous case, you can compare the solution ob-
+tained by your program with the analytical one. You are required to
+
+validate your program for a homogeneous case with non-zero initial con-
+ditions. The analytic solution for this case has been provided at the end
+
+of assignment.
+7. For validation of non-homogeneous case, we are going to try the cool
+method of manufactured solution. In this technique, we are going to first
+assume a simple solution (for example: (x = sin(t))), and corresponding
+to it we are going to find out the f(t)(from differential equation) and
+initial conditions. Now we can use our program with the obtained force
+and initial conditions. The results obtained are expected to match the
+assumed solution.
+
+1
+
+8. Solve the system for an arbitrary function and initial conditions. Hint:
+In order to make sure that your results are correct, run the program with
+successive decreasing values of ∆t, and make sure that after a while your
+results do not change by further reduction in ∆t value.
+9. Try any two values of α from 0, 0.5, and 1 and compare the performance
+of these two methods. You can carry out the comparison in terms of the
+accuracy and stability.
+10. Something you can try for fun (not required for submission) Try to predict
+the velocity (  ̇x) along with position (x), and see is it harder to predict the
+velocity compared to position?
+
+
+
